@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{ 
+            min-width: 900px;
+
+        }
+        .wrapper {
+            position: relative;
+            overflow: auto;
+        }
+        #top {
+            background-color: greenyellow;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        #menubar {
+            width: 200px;
+            float: left;
+        }
+        #main {
+            padding: 10px;
+            margin: 0px 210px;
+            background-color: yellow;
+            border-radius: 10px;
+        }
+        #sidebar {
+            background-color: skyblue;
+            padding: 10px;
+            position: absolute;
+            width: 180px;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            border-radius: 10px;
+        }
+        #bottom {
+            background-color: gray;
+            font-size: 12px;
+            margin: 10px 0;
+            padding: 16px;
+            border-radius: 10px;
+        }
+        #menulist {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .menuitem {
+            background-color: aquamarine;
+            border: 1px solid blue;
+            margin: 5px;
+            padding: 6px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="top">
+            <h1>Welcome to 22100077's homepage</h1>
+            <p>Use the menu to select different stylesheets</p>
+        </div>
+        <div class="wrapper">
+            <div id="menubar">
+                <ul id="menulist">
+                    <li class="menuitem" onclick="" >Stylesheet1</li>
+                    <li class="menuitem" onclick="" >Stylesheet2</li>
+                    <li class="menuitem" onclick="" >Stylesheet3</li>
+                    <li class="menuitem" onclick="" >Stylesheet4</li>
+                    <li class="menuitem" onclick="" >Stylesheet5</li>
+                </ul>
+            </div>
+            <div id="main">
+                <h1>Same Page Different Stylesheets</h1>
+                This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+                <p>Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.</p>
+                
+                <h1>No Styles</h1>
+                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+                No Stylesheet.
+                </div>
+            <div id="sidebar">
+                <h3>Side-Bar</h3>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </div>
+        </div>
+        <div id="bottom">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </div>
+    </div>
+</body>
+</html>
