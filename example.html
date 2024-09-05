@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0px 300px;
+      }
+
+      #mainHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #dee2e6;
+        height: 100px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        /* margin: 0 10px; */
+      }
+
+      .menulist {
+        margin: 0 10px;
+        font-weight: lighter;
+      }
+
+      #pricingText {
+        text-align: center;
+      }
+
+      .bodyText {
+        font-size: 1.25rem;
+      }
+
+      #cardBody {
+        text-align: center;
+        display: flex;
+        margin-top: 50px;
+      }
+
+      .card {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        border: 1px solid #dee2e6;
+        margin: 10px;
+        border-radius: 6px;
+      }
+
+      .cardTitle {
+        border-bottom: 1px solid #dee2e6;
+        border-top: 1px solid transparent;
+      }
+
+      .cardText {
+        flex: 1 1 auto;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 5px;
+        padding-left: 0;
+      }
+      button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 90%;
+        padding: 18px 5px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      #whiteBack {
+        border: 1px solid #0d6efd;
+        color: #0d6efd;
+        font-size: 16px;
+        background-color: white;
+      }
+
+      #whiteBack:hover {
+        border: 1px solid #0d6efd;
+        color: white;
+        font-size: 16px;
+        background-color: #0d6efd;
+      }
+
+      .blueBack {
+        border: 1px solid #0d6efd;
+        color: white;
+        font-size: 16px;
+        background-color: #0d6efd;
+      }
+
+      #blueCard {
+        border: 1px solid #0d6efd;
+      }
+
+      #blueCardTitle {
+        background-color: #0d6efd;
+        color: white;
+      }
+
+      #plan {
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+      }
+      td {
+        border-bottom: 1px solid #dee2e6;
+        padding: 10px;
+      }
+
+      .text-start {
+        font-weight: bold;
+        text-align: left;
+      }
+
+      #bottom {
+        width: 100%;
+        margin: 70px 0;
+        border-top: 1px solid #dee2e6;
+      }
+
+      .bottomBox {
+        padding-left: 10px;
+        padding-right: 10px;
+        flex: 1 0 0%;
+      }
+
+      #row {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 50px;
+      }
+
+      #icon {
+        width: 24px;
+        height: 19px;
+        border-radius: 4px;
+        background-color: blueviolet;
+        margin-bottom: 5px;
+      }
+
+      .bottomLi {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header id="mainHeader">
+        <a href=""><h1 style="display: inline">Pricing example</h1></a>
+        <nav style="display: inline">
+          <a class="menulist" href=""
+            ><h3 style="display: inline">Features</h3></a
+          >
+          <a class="menulist" href=""
+            ><h3 style="display: inline">Enterprise</h3></a
+          >
+
+          <a class="menulist" href=""
+            ><h3 style="display: inline">Support</h3></a
+          >
+          <a class="menulist" href=""
+            ><h3 style="display: inline">Pricing</h3></a
+          >
+        </nav>
+      </header>
+      <div id="main">
+        <div id="pricing">
+          <div id="pricingText">
+            <h1>Pricing</h1>
+            <divi class="bodyText">
+              Quickly build an effective pricing table for your potential
+              customers with this Bootstrap example. It’s built with default
+              Bootstrap components and utilities with little customization.
+            </divi>
+          </div>
+          <div id="cardBody">
+            <div class="card">
+              <div class="cardTitle">
+                <h2>Free</h2>
+              </div>
+              <div class="cardText">
+                <h2>$0/mo</h2>
+                <ul>
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help centeraccess</li>
+                </ul>
+                <button id="whiteBack" type="button">Sign up for free</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="cardTitle">
+                <h2>Free</h2>
+              </div>
+              <div class="cardText">
+                <h2>$15/mo</h2>
+                <ul>
+                  <li>20 users included</li>
+                  <li>10 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help centeraccess</li>
+                </ul>
+                <button class="blueBack" type="button">Sign up for free</button>
+              </div>
+            </div>
+            <div id="blueCard" class="card">
+              <div id="blueCardTitle" class="cardTitle">
+                <h2>Free</h2>
+              </div>
+              <div class="cardText">
+                <h2>$29/mo</h2>
+                <ul>
+                  <li>30 users included</li>
+                  <li>15 GB of storage</li>
+                  <li>Phone and email support</li>
+                  <li>Help centeraccess</li>
+                </ul>
+                <button class="blueBack" type="button">Sign up for free</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="plan">
+          <h1>Compare plans</h1>
+          <table>
+            <tr>
+              <td>&nbsp;</td>
+              <td style="font-weight: bold">Pro</td>
+              <td style="font-weight: bold">Pro</td>
+              <td style="font-weight: bold">Enterprise</td>
+            </tr>
+            <tr>
+              <td class="text-start">Public</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="text-start">Private</td>
+              <td>&nbsp;</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="text-start">Permissions</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="text-start">Sharing</td>
+              <td>&nbsp;</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="text-start">Unlimited members</td>
+              <td>&nbsp;</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="text-start">Extra security</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>Yes</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="bottom">
+        <div id="row">
+          <div class="bottomBox">
+            <div id="icon"></div>
+            <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
+          </div>
+          <div class="bottomBox">
+            <h3>Features</h3>
+            <ul>
+              <li class="bottomLi"><a href="">Cool stuff</a></li>
+              <li class="bottomLi"><a href="">Random feature</a></li>
+              <li class="bottomLi"><a href="">Team feature</a></li>
+              <li class="bottomLi"><a href="">Stuff for developers</a></li>
+              <li class="bottomLi"><a href="">Another one</a></li>
+              <li class="bottomLi"><a href="">Last time</a></li>
+            </ul>
+          </div>
+          <div class="bottomBox">
+            <h3>Resources</h3>
+            <ul>
+              <li class="bottomLi"><a href="">Cool stuff</a></li>
+              <li class="bottomLi"><a href="">Resource</a></li>
+              <li class="bottomLi"><a href="">Resource name</a></li>
+              <li class="bottomLi"><a href="">Another Resource</a></li>
+              <li class="bottomLi"><a href="">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="bottomBox">
+            <h3>About</h3>
+            <ul>
+              <li class="bottomLi"><a href="">Team</a></li>
+              <li class="bottomLi"><a href="">Locations</a></li>
+              <li class="bottomLi"><a href="">Team feature</a></li>
+              <li class="bottomLi"><a href="">Privacy</a></li>
+              <li class="bottomLi"><a href="">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
