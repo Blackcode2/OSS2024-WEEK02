@@ -76,10 +76,19 @@
         background-color: #ffffff;
         color: #d14836;
       }
-      .menuitem:nth-child(1) {
+      .firstspecial {
         background-color: white;
         color: #d14836;
         font-weight: bold;
+        list-style-type: none;
+        width: 155px;
+
+        border: 1px solid #d14836;
+
+        margin: 10px;
+        padding: 5px;
+        border-radius: 40px;
+        text-align: center;
       }
       a {
         color: #d14836;
@@ -98,6 +107,23 @@
         background-color: white;
         text-decoration: none;
       }
+
+      .specialClass {
+        list-style-type: none;
+        width: 155px;
+        background-color: #d14836;
+        border: 1px solid #d14836;
+        color: #ffffff;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 40px;
+        text-align: center;
+      }
+
+      .specialClass:hover {
+        background-color: #ffffff;
+        color: #d14836;
+      }
     </style>
   </head>
   <body>
@@ -109,17 +135,23 @@
       <div class="wrapper">
         <div id="menubar">
           <ul id="menulist">
-            <li class="menuitem" onclick="">
-              <a class="link" href="stylesheet1.html" style="display: block"
-                >Stylesheet1</a
-              >
-            </li>
-            <li class="menuitem" onclick="">
-              <a href="stylesheet2.html" style="text-decoration: none;">Stylesheet2</a>
-            </li>
-            <li class="menuitem" onclick="">
-              <a href="index.html" class="link" style="display: block">Stylesheet3</a>
-            </li>
+            <a
+              href="stylesheet1.html"
+              style="text-decoration: none; display: block"
+              ><li class="firstspecial" onclick="">Stylesheet1</li></a
+            >
+            <a
+              href="stylesheet2.html"
+              class="special"
+              style="text-decoration: none; display: block"
+              ><li class="specialClass" onclick="">Stylesheet2</li></a
+            >
+            <a
+              href="index.html"
+              class="special"
+              style="text-decoration: none; display: block"
+              ><li class="specialClass" onclick="">Stylesheet3</li></a
+            >
             <li class="menuitem" onclick="">Stylesheet4</li>
             <li class="menuitem" onclick="">Stylesheet5</li>
           </ul>
@@ -132,8 +164,10 @@
             selecting different stylesheets in the menu, or by selecting one of
             the following links:
             <br />
-            <a href="stylesheet1.html">Stylesheet1</a>, <a href="stylesheet2.html">Stylesheet2</a>,
-            <a href="index.html">Stylesheet3</a>, <a>Stylesheet4</a>, <a>Stylesheet5</a>
+            <a href="stylesheet1.html">Stylesheet1</a>,
+            <a href="stylesheet2.html">Stylesheet2</a>,
+            <a href="index.html">Stylesheet3</a>, <a>Stylesheet4</a>,
+            <a>Stylesheet5</a>
           </p>
 
           <h2>No Styles</h2>
