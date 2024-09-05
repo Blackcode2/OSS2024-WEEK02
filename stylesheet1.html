@@ -6,11 +6,10 @@
     <title>Document</title>
     <style>
       body {
-        font: 100% Verdana;
-        margin: 20px;
-        line-height: 26px;
+        font-family: Arial;
+        background-color: #d14836;
+        line-height: 20px;
       }
-
       .container {
         min-width: 900px;
       }
@@ -18,60 +17,76 @@
         position: relative;
         overflow: auto;
       }
-
-      #sidebar {
-        background-color: #f1f1f1;
-        border: 1px solid #d4d4d4;
-        padding-left: 10px;
+      #top {
+        color: #ffffff;
+        padding: 15px;
+        font-size: 30px;
+        line-height: 26px;
       }
 
+      #top h1 {
+        margin: 0;
+        line-height: 26px;
+      }
 
+      #menubar {
+        width: 200px;
+        float: right;
+      }
+      #main {
+        padding: 10px;
+        background-color: #ffffff;
+        font: 80% Verdana;
+      }
+
+      #main h1,
+      #main h2 {
+        color: #d14836;
+      }
+
+      #sidebar {
+        background-color: #f6dad7;
+        padding: 10px;
+        color: #d14836;
+      }
       #bottom {
         text-align: center;
         padding: 10px;
         font-size: 70%;
-        line-height: 14px;
+        color: #ffffff;
       }
 
-      h1, h2, h3 {
-        color: #4CAF50;
-      }
-      
       #menulist {
-        padding: 0;
-        position:relative;
-        overflow: auto;
+        padding: 0px;
+        font: 16px verdana;
       }
-
       .menuitem {
-        width: 165px;
-        float: left;
-        background-color: #555555;
+        width: 155px;
+        background-color: #d14836;
+        border: 1px solid #d14836;
         color: #ffffff;
         list-style-type: none;
-        margin: 4px;
-        padding: 2px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 40px;
         text-align: center;
         cursor: pointer;
       }
       .menuitem:hover {
-        background-color: #000;
+        background-color: #ffffff;
+        color: #d14836;
       }
-
-      .menuitem:nth-child(2) {
-        background-color: #04AA6D;
+      .menuitem:nth-child(1) {
+        background-color: white;
+        color: #d14836;
+        font-weight: bold;
       }
-      .menuitem:nth-child(2):hover {
-        color: white;
-        background-color: #000;
-      }
-
       a {
-        color: #000000;
-        text-decoration: underline;
+        color: #d14836;
+        text-decoration: none;
       }
       a:hover {
-        color: #84c754;
+        text-decoration: underline;
       }
 
       .link {
@@ -79,10 +94,10 @@
       }
 
       .link:hover {
-        color: white;
+        color: #d14836;
+        background-color: white;
         text-decoration: none;
       }
-
     </style>
   </head>
   <body>
@@ -95,15 +110,15 @@
         <div id="menubar">
           <ul id="menulist">
             <li class="menuitem" onclick="">
-              <a class="link" href="stylesheet1.html" style="text-decoration: none; display: block;"
+              <a class="link" href="stylesheet1.html" style="display: block"
                 >Stylesheet1</a
               >
             </li>
             <li class="menuitem" onclick="">
-              <a href="stylesheet2.html" style="text-decoration: none; display: block; color: white">Stylesheet2</a>
+              <a href="stylesheet2.html" style="text-decoration: none;">Stylesheet2</a>
             </li>
             <li class="menuitem" onclick="">
-              <a href="index.html" class="link" style="text-decoration: none; display: block;">Stylesheet3</a>
+              <a href="index.html" class="link" style="display: block">Stylesheet3</a>
             </li>
             <li class="menuitem" onclick="">Stylesheet4</li>
             <li class="menuitem" onclick="">Stylesheet5</li>
